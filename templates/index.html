@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>AI Debate</title>
+</head>
+<body>
+  <h1>Personality Debate Simulator</h1>
+  <form method="POST">
+    <label>Topic: <input type="text" name="topic" required></label><br><br>
+    <label>Persona 1:
+      <select name="persona1">
+        <option value="lazy">Lazy</option>
+        <option value="confident">Confident</option>
+        <option value="anxious">Anxious</option>
+      </select>
+    </label><br><br>
+    <label>Persona 2:
+      <select name="persona2">
+        <option value="confident">Confident</option>
+        <option value="lazy">Lazy</option>
+        <option value="anxious">Anxious</option>
+      </select>
+    </label><br><br>
+    <button type="submit">Start Debate</button>
+  </form>
+
+  {% if result %}
+    <h2>Debate Results</h2>
+    <p><strong>Persona 1:</strong> {{ result.p1 }}</p>
+    <p><strong>Persona 2:</strong> {{ result.p2 }}</p>
+  {% endif %}
+</body>
+</html>

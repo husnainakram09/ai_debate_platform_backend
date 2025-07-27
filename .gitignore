@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+.venv/
+
+# Flask instance folder
+instance/
+
+# Flask SQLite database
+*.sqlite3
+*.db
+
+# Environment variables
+.env
+.env.*
+
+# Pytest / coverage / testing
+.coverage
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# MyPy
+.mypy_cache/
+
+# VS Code settings
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs and local data
+*.log
+*.pot
+*.mo
+
+# MacOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# Node (if you're using a frontend in same repo)
+node_modules/
+dist/
+build/
