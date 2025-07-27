@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: flask-api
+    runtime: python  # ✅ This is the missing required key
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app  # change `app:app` based on your file and variable name
+    envVars:
+      - key: FLASK_ENV
+        value: production
